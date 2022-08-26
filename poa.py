@@ -32,7 +32,7 @@ def poa_all(outpath,goodchrom):
 			except:
 				pass
 		f.close()
-		os.system('bsalign poa '+outpath+'poa_workspace/suppread_'+gfinfo+'.fastq -o '+outpath+'poa_workspace/poa_'+gfinfo+'.fa')
+		os.system('/content/bsalign/bsalign poa '+outpath+'poa_workspace/suppread_'+gfinfo+'.fastq -o '+outpath+'poa_workspace/poa_'+gfinfo+'.fa')
 		poactg=open(outpath+'poa_workspace/poa_'+gfinfo+'.fa','r').read().split('>')
 		if len(poactg)!=2:
 			continue
