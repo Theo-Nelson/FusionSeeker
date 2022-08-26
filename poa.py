@@ -66,7 +66,7 @@ def polish_bp(outpath,goodchrom,reference,datatype,polishbp):
 		raw_signal.detect_from_split(outpath+'poa_workspace/',goodchrom)
 		
 		goodpos=open(outpath+'poa_workspace/rawsignal.txt','r').read().split('\n')[:-1]
-
+		next(goodpos)
 		for goodgf in goodpos:
 			goodgf=goodgf.split('\t')
 			if goodgf[0]==goodgf[7].split('_')[3] and goodgf[1]==goodgf[7].split('_')[4] :
