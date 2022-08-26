@@ -407,7 +407,6 @@ def detect_from_split(outpath,good):
 
 
 	f=open(outpath+'rawsignal.txt','w')
-	f.write('gene1\tgene2\tsplitread\tchrom1\tbp1\tchrom21\tbp2\tread1[3]\t[leftread[6],rightread[6]]\tmaplen1\tmaplen2\tgapsize\n')
 	for c in fusion:
 #		gene1,gene2,'splitread',chrom1,bp1,chrom2,bp2,read1[3],[leftread[6],rightread[6]],maplen1,maplen2,gapsize
 		mapq=[str(cc) for cc in c[8]]
