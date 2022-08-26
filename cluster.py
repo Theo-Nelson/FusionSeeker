@@ -174,7 +174,6 @@ def cluster_bp(outpath,maxdistance,min_supp):
 		writeid+=1
 		mergedgf+=candi
 	f=open(outpath+'clustered_candidate.txt','w')
-	f.write('Gene1\tGene2\tNumSupp\tChrom1\tBreakpoint1\tChrom2\tBreakpoint2\tUnknown\tSupportingReads\n')
 	for c in mergedgf:
 		f.write(c+'\n')
 	f.close()
